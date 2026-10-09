@@ -1,8 +1,9 @@
-README_DE.txt
+
 
 # llc2cutlist.ps1
 
 Das Schnittprogramm "LosslessCut" ist gut zum verlustfreien und framegenauen Schneiden von Fernsehaufnahmen geeignet. Es kann dabei vorhandene Schnittlisten im cutlist-Format einlesen, aber noch keine solchen erzeugen. Beim Schneiden erzeugt es allerdings implizit Projektdateien mit den wesentlichen Informationen der erzeugten Schnitte.
+
 Dieses Skript konvertiert unter Zuhilfenahme einer Konfigurationsdatei und einer cmd-Wrapper-Datei mit einem Klick alle in einem Verzeichnis vom Schnittprogramm LosslessCut erstellten *proj.llc Projektdateien in das cutlist-Format *.cutlist zum Hochladen bei cutlist.at . Die Konfigurationsdatei kann einerseits Standardwerte enthalten, die weitere Eingaben ersparen, andererseits auch zu Dialogeingaben auffordern, falls eine Cutlist mit speziellen Informationen versehen werden soll.
 
 ## OS
@@ -14,24 +15,29 @@ Windows
 CLI with options, config file
 
 ## Syntax
-
+```
 .\llc2cutlist.ps1
 -InputDirectory C:\Path\to\llcfiles 
 -OriginalDirectory F:\Path\to\mp4files 
 [-MediaInfoPath C:\Path\to\MediaInfo.exe]
-[ -ConfigFile D:\Path\to\llc2cutlist\cutlist-manual.cfg]
-[ -Force]
+[-ConfigFile D:\Path\to\llc2cutlist\cutlist-manual.cfg]
+[-Force]
+```
 
 ## Voraussetzungen
 
 Das PowerShell-Skript muss lokal ausgeführt werden dürfen.
+
 LosslessCut zum Erzeugen von Projektdateien sollte vorhanden sein.
+
 Das Vorhandensein resp. die Benutzung von mediainfo ist optional zur korrekten Ermittlung der Bildrate (FPS) der Originaldatei. Eine Cutlist enthält die Schnittinformationen einerseits in Sekunden, andererseits in FPS. Mir ist allerdings aktuell kein Schnittprogramm bekannt, das nicht auch ausschließlich mit Werten in Sekunden arbeiten kann.
 
 ## Installation
 
 Entpacke die zip-Datei an beliebiger Stelle.
+
 Pflege die beigelegten Konfigurationsdateien nach deinen Wünschen. Die Datei "cutlist.cfg" sollte der Einfachheit halber neben dem PS1-Skript liegenbleiben. (Alle anderen Dateien können das auch, müssen es aber nicht.)
+
 Pflege die beigelegten cmd-Dateien mit den lokal zu benutzenden Pfaden.
 
 ## Benutzung
