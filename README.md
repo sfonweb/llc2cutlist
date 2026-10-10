@@ -26,11 +26,11 @@ CLI with options, config file
 
 ## Voraussetzungen
 
-Das PowerShell-Skript muss lokal ausgeführt werden dürfen.
+Das PowerShell-Skript muss lokal ausgeführt werden dürfen. Gegebenenfalls muss eine geeignete Policy gesetzt werden.
 
 LosslessCut zum Erzeugen von Projektdateien sollte vorhanden sein.
 
-Das Vorhandensein resp. die Benutzung von mediainfo ist optional zur korrekten Ermittlung der Bildrate (FPS) der Originaldatei. Eine Cutlist enthält die Schnittinformationen einerseits in Sekunden, andererseits in FPS. Mir ist allerdings aktuell kein Schnittprogramm bekannt, das nicht auch ausschließlich mit Werten in Sekunden arbeiten kann.
+Das Vorhandensein resp. die Benutzung des mediainfo client (nicht der GUI-Version! Diese wird aktuell noch nicht unterstützt) ist optional zur korrekten Ermittlung der Bildrate (FPS) der Originaldatei. Eine Cutlist enthält die Schnittinformationen einerseits in Sekunden, andererseits in FPS. Mir ist allerdings aktuell kein Schnittprogramm bekannt, das nicht auch ausschließlich mit Werten in Sekunden arbeiten kann.
 
 ## Installation
 
